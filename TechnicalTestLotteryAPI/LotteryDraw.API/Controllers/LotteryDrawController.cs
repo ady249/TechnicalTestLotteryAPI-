@@ -1,10 +1,17 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using LotteryDraw.Repository.Interfaces;
 
 namespace LotteryDraw.API.Controllers
 {
     public class LotteryDrawController : ApiController
     {
+        private readonly IRepository _repository;
+        public LotteryDrawController(IRepository repository)
+        {
+            _repository = repository;
+        }
+
         // GET: api/LotteryDraw
         public IEnumerable<string> Get()
         {
@@ -20,6 +27,7 @@ namespace LotteryDraw.API.Controllers
         // POST: api/LotteryDraw
         public void Post([FromBody]Models.LotteryDraw value)
         {
+            _repository.CreateLotteryDrawEntry(value);
         }
 
         // PUT: api/LotteryDraw/5

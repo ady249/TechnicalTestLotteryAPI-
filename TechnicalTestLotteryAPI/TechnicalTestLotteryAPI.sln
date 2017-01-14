@@ -19,6 +19,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryDraw.Repository.Memo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryDraw.Repository.Interfaces", "LotteryDraw.Repository.Interfaces\LotteryDraw.Repository.Interfaces.csproj", "{236BB09D-33A1-4CC7-B916-A905BC90FC18}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryDraw.ErrorHandler.Interfaces", "LotteryDraw.ErrorHandler.Interfaces\LotteryDraw.ErrorHandler.Interfaces.csproj", "{25A1F2A6-92BD-4AB4-A922-60D24A88D756}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tracer", "Tracer", "{8DF0B77E-20AC-4FC5-8663-3901806151C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryDraw.Tracer.Interfaces", "LotteryDraw.Tracer.Interfaces\LotteryDraw.Tracer.Interfaces.csproj", "{366B65F1-D876-40B4-9134-011629BBBF44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryDraw.Tracer.DebugTracer", "LotteryDraw.Tracer.DebugTracer\LotteryDraw.Tracer.DebugTracer.csproj", "{2E052AD7-457A-42B1-BEC2-22B235C03C76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryDraw.Command.Interfaces", "LotteryDraw.Command.Interfaces\LotteryDraw.Command.Interfaces.csproj", "{0051B252-28DE-4A24-89FA-B9489999A668}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{A3653742-6E5F-4321-9DC7-4C787ABF3DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LotteryDraw.Data.Interfaces", "LotteryDraw.Data.Interfaces\LotteryDraw.Data.Interfaces.csproj", "{FE0C8FEC-71EB-4976-B00D-C21C25E96DCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +59,26 @@ Global
 		{236BB09D-33A1-4CC7-B916-A905BC90FC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{236BB09D-33A1-4CC7-B916-A905BC90FC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{236BB09D-33A1-4CC7-B916-A905BC90FC18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25A1F2A6-92BD-4AB4-A922-60D24A88D756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A1F2A6-92BD-4AB4-A922-60D24A88D756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A1F2A6-92BD-4AB4-A922-60D24A88D756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A1F2A6-92BD-4AB4-A922-60D24A88D756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{366B65F1-D876-40B4-9134-011629BBBF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{366B65F1-D876-40B4-9134-011629BBBF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{366B65F1-D876-40B4-9134-011629BBBF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{366B65F1-D876-40B4-9134-011629BBBF44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E052AD7-457A-42B1-BEC2-22B235C03C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E052AD7-457A-42B1-BEC2-22B235C03C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E052AD7-457A-42B1-BEC2-22B235C03C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E052AD7-457A-42B1-BEC2-22B235C03C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0051B252-28DE-4A24-89FA-B9489999A668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0051B252-28DE-4A24-89FA-B9489999A668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0051B252-28DE-4A24-89FA-B9489999A668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0051B252-28DE-4A24-89FA-B9489999A668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE0C8FEC-71EB-4976-B00D-C21C25E96DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE0C8FEC-71EB-4976-B00D-C21C25E96DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE0C8FEC-71EB-4976-B00D-C21C25E96DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE0C8FEC-71EB-4976-B00D-C21C25E96DCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,5 +89,10 @@ Global
 		{71B8771F-96F3-4CC0-A181-BF701EA1DFD4} = {FF2E4C45-9B8F-4E45-8E5F-9DE3A762CF29}
 		{FEF0227B-7C66-45F6-8C80-4C04D0DAE95C} = {432F2939-810A-4283-9775-1DF62970A6A3}
 		{236BB09D-33A1-4CC7-B916-A905BC90FC18} = {432F2939-810A-4283-9775-1DF62970A6A3}
+		{25A1F2A6-92BD-4AB4-A922-60D24A88D756} = {A3653742-6E5F-4321-9DC7-4C787ABF3DE9}
+		{366B65F1-D876-40B4-9134-011629BBBF44} = {8DF0B77E-20AC-4FC5-8663-3901806151C2}
+		{2E052AD7-457A-42B1-BEC2-22B235C03C76} = {8DF0B77E-20AC-4FC5-8663-3901806151C2}
+		{0051B252-28DE-4A24-89FA-B9489999A668} = {A3653742-6E5F-4321-9DC7-4C787ABF3DE9}
+		{FE0C8FEC-71EB-4976-B00D-C21C25E96DCB} = {A3653742-6E5F-4321-9DC7-4C787ABF3DE9}
 	EndGlobalSection
 EndGlobal

@@ -47,6 +47,16 @@
     <Compile Include="Methods\IUpdateLotteryDraw.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LotteryDraw.ErrorHandler.Interfaces\LotteryDraw.ErrorHandler.Interfaces.csproj">
+      <Project>{25A1F2A6-92BD-4AB4-A922-60D24A88D756}</Project>
+      <Name>LotteryDraw.ErrorHandler.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LotteryDraw.Models.Interfaces\LotteryDraw.Models.Interfaces.csproj">
+      <Project>{71B8771F-96F3-4CC0-A181-BF701EA1DFD4}</Project>
+      <Name>LotteryDraw.Models.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

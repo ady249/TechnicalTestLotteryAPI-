@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{71B8771F-96F3-4CC0-A181-BF701EA1DFD4}</ProjectGuid>
+    <ProjectGuid>{2E052AD7-457A-42B1-BEC2-22B235C03C76}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LotteryDraw.Models.Interfaces</RootNamespace>
-    <AssemblyName>LotteryDraw.Models.Interfaces</AssemblyName>
+    <RootNamespace>LotteryDraw.Tracer.DebugTracer</RootNamespace>
+    <AssemblyName>LotteryDraw.Tracer.DebugTracer</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,34 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\Covariant\IDateOfDraw.cs" />
-    <Compile Include="Attributes\Covariant\IDescription.cs" />
-    <Compile Include="Attributes\Covariant\IName.cs" />
-    <Compile Include="Attributes\Covariant\IRange.cs" />
-    <Compile Include="Attributes\Covariant\IRangeMaximum.cs" />
-    <Compile Include="Attributes\Covariant\IRangeMinimum.cs" />
-    <Compile Include="Attributes\Covariant\IRangePrimary.cs" />
-    <Compile Include="Attributes\Covariant\IRangeSecondary.cs" />
-    <Compile Include="Attributes\Covariant\ITotalPrimaryNumbers.cs" />
-    <Compile Include="Attributes\Covariant\ITotalSecondaryNumbers.cs" />
-    <Compile Include="Attributes\Covariant\IWinningPrimaryNumbers.cs" />
-    <Compile Include="Attributes\Covariant\IWinningSecondaryNumbers.cs" />
-    <Compile Include="Attributes\Invariant\IDateOfDrawInvariant.cs" />
-    <Compile Include="Attributes\Invariant\IDescriptionInvariant.cs" />
-    <Compile Include="Attributes\Invariant\INameInvariant.cs" />
-    <Compile Include="Attributes\Invariant\IRangeInvariant.cs" />
-    <Compile Include="Attributes\Invariant\IRangeMaximumInvariant.cs" />
-    <Compile Include="Attributes\Invariant\IRangeMinimumInvariant.cs" />
-    <Compile Include="Attributes\Invariant\IRangePrimaryInvariant.cs" />
-    <Compile Include="Attributes\Invariant\IRangeSecondaryInvariant.cs" />
-    <Compile Include="Attributes\Invariant\ITotalPrimaryNumbersInvariant.cs" />
-    <Compile Include="Attributes\Invariant\ITotalSecondaryNumbersInvariant.cs" />
-    <Compile Include="Attributes\Invariant\IWinningPrimaryNumbersInvariant.cs" />
-    <Compile Include="Attributes\Invariant\IWinningSecondaryNumbersInvariant.cs" />
-    <Compile Include="Models\ILotteryDraw.cs" />
-    <Compile Include="Models\ILotteryDrawWithResults.cs" />
-    <Compile Include="Models\IWinningNumbers.cs" />
+    <Compile Include="DebugTracer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LotteryDraw.Tracer.Interfaces\LotteryDraw.Tracer.Interfaces.csproj">
+      <Project>{366B65F1-D876-40B4-9134-011629BBBF44}</Project>
+      <Name>LotteryDraw.Tracer.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

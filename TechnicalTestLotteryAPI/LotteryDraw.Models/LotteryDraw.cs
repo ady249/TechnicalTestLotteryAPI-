@@ -1,6 +1,7 @@
 ﻿using System;
 using LotteryDraw.Models.Interfaces;
 using LotteryDraw.Models.Interfaces.Attributes.Invariant;
+using LotteryDraw.Models.Interfaces.Models;
 using Newtonsoft.Json;
 
 namespace LotteryDraw.Models

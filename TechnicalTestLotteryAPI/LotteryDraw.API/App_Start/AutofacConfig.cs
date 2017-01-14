@@ -16,6 +16,8 @@ namespace LotteryDraw.API
             builder.RegisterAssemblyTypes(Assembly.Load("LotteryDraw.Models")).AsImplementedInterfaces();
             builder.RegisterAssemblyTypes(Assembly.Load("LotteryDraw.Repository.Memory")).AsImplementedInterfaces();
 
+            builder.RegisterAssemblyTypes(Assembly.Load("LotteryDraw.Tracer.DebugTracer")).AsImplementedInterfaces();
+
             GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver(builder.Build());
         }
     }
