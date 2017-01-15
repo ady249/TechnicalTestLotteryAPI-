@@ -1,9 +1,7 @@
-﻿using LotteryDraw.Models.Interfaces.Attributes.Covariant;
-
-namespace LotteryDraw.Models.Interfaces.Attributes.Invariant
+﻿namespace LotteryDraw.Models.Interfaces.Attributes.Invariant
 {
-    public interface IRangeMinimumInvariant : IRangeMinimum
+    public interface IRangeMinimumInvariant
     {
-        new int Minimum { get; set; }
+        int Minimum { get; set; }
     }
 }

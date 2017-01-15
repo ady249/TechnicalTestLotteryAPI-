@@ -1,10 +1,9 @@
 ﻿using System;
-using LotteryDraw.Models.Interfaces.Attributes.Covariant;
 
 namespace LotteryDraw.Models.Interfaces.Attributes.Invariant
 {
-    public interface IDateOfDrawInvariant : IDateOfDraw
+    public interface IDateOfDrawInvariant
     {
-        new DateTime DateOfDraw { get; set; }
+        DateTime DateOfDraw { get; set; }
     }
 }

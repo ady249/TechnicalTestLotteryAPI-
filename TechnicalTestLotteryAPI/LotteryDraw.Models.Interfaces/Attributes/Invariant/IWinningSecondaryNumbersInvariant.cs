@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using LotteryDraw.Models.Interfaces.Attributes.Covariant;
 
 namespace LotteryDraw.Models.Interfaces.Attributes.Invariant
 {
-    public interface IWinningSecondaryNumbersInvariant : IWinningSecondaryNumbers
+    public interface IWinningSecondaryNumbersInvariant
     {
-        new IEnumerable<int> WinningSecondaryNumbers { get; set; }
+        IEnumerable<int> WinningSecondaryNumbers { get; set; }
     }
 }

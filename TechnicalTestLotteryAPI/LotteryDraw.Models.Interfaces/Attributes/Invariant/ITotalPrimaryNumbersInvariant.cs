@@ -1,9 +1,7 @@
-﻿using LotteryDraw.Models.Interfaces.Attributes.Covariant;
-
-namespace LotteryDraw.Models.Interfaces.Attributes.Invariant
+﻿namespace LotteryDraw.Models.Interfaces.Attributes.Invariant
 {
-    public interface ITotalPrimaryNumbersInvariant : ITotalPrimaryNumbers
+    public interface ITotalPrimaryNumbersInvariant
     {
-        new int TotalPrimaryNumbers { get; set; }
+        int TotalPrimaryNumbers { get; set; }
     }
 }

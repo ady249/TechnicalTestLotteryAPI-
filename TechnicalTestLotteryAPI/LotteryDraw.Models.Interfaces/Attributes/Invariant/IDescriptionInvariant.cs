@@ -1,9 +1,7 @@
-﻿using LotteryDraw.Models.Interfaces.Attributes.Covariant;
-
-namespace LotteryDraw.Models.Interfaces.Attributes.Invariant
+﻿namespace LotteryDraw.Models.Interfaces.Attributes.Invariant
 {
-    public interface IDescriptionInvariant : IDescription
+    public interface IDescriptionInvariant
     {
-        new string Description { get; set; }
+        string Description { get; set; }
     }
 }

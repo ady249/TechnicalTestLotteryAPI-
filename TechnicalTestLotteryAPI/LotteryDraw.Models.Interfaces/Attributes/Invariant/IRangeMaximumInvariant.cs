@@ -1,9 +1,7 @@
-﻿using LotteryDraw.Models.Interfaces.Attributes.Covariant;
-
-namespace LotteryDraw.Models.Interfaces.Attributes.Invariant
+﻿namespace LotteryDraw.Models.Interfaces.Attributes.Invariant
 {
-    public interface IRangeMaximumInvariant : IRangeMaximum
+    public interface IRangeMaximumInvariant
     {
-        new int Maximum { get; set; }
+        int Maximum { get; set; }
     }
 }

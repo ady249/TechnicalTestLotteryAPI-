@@ -40,18 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Attributes\Covariant\IDateOfDraw.cs" />
-    <Compile Include="Attributes\Covariant\IDescription.cs" />
-    <Compile Include="Attributes\Covariant\IName.cs" />
-    <Compile Include="Attributes\Covariant\IRange.cs" />
-    <Compile Include="Attributes\Covariant\IRangeMaximum.cs" />
-    <Compile Include="Attributes\Covariant\IRangeMinimum.cs" />
-    <Compile Include="Attributes\Covariant\IRangePrimary.cs" />
-    <Compile Include="Attributes\Covariant\IRangeSecondary.cs" />
-    <Compile Include="Attributes\Covariant\ITotalPrimaryNumbers.cs" />
-    <Compile Include="Attributes\Covariant\ITotalSecondaryNumbers.cs" />
-    <Compile Include="Attributes\Covariant\IWinningPrimaryNumbers.cs" />
-    <Compile Include="Attributes\Covariant\IWinningSecondaryNumbers.cs" />
     <Compile Include="Attributes\Invariant\IDateOfDrawInvariant.cs" />
     <Compile Include="Attributes\Invariant\IDescriptionInvariant.cs" />
     <Compile Include="Attributes\Invariant\INameInvariant.cs" />
