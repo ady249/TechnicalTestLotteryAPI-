@@ -68,6 +68,16 @@
     <Compile Include="Models\ILotteryDrawWithResults.cs" />
     <Compile Include="Models\IWinningNumbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Response\ISimpleResponse.cs" />
+    <Compile Include="Response\ISimpleResponseWithData.cs" />
+    <Compile Include="Storage\IPersistantStorage.cs" />
+    <Compile Include="Storage\IStorageList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LotteryDraw.ErrorHandler.Interfaces\LotteryDraw.ErrorHandler.Interfaces.csproj">
+      <Project>{25A1F2A6-92BD-4AB4-A922-60D24A88D756}</Project>
+      <Name>LotteryDraw.ErrorHandler.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -4,6 +4,6 @@ namespace LotteryDraw.Repository.Interfaces.Methods
 {
     public interface IUpdateLotteryDraw
     {
-        void Update(IWinningNumbers winningNumbers, string name);
+        void Update(string name, IWinningNumbers winningNumbers);
     }
 }

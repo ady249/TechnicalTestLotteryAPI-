@@ -42,14 +42,21 @@
   <ItemGroup>
     <Compile Include="Commands\CreateLotteryDrawCommand.cs" />
     <Compile Include="Commands\UpdateSpecificLotteryDrawCommand.cs" />
+    <Compile Include="Factories\LotteryDrawWithResultsListFactory.cs" />
     <Compile Include="Interfaces\Commands\Base\ICommand.cs" />
     <Compile Include="Interfaces\Commands\ICreateLotteryDrawCommand.cs" />
     <Compile Include="Interfaces\Commands\IUpdateSpecificLotteryDrawCommand.cs" />
     <Compile Include="Interfaces\IConvertLotteryDraw.cs" />
+    <Compile Include="Interfaces\ILotteryDrawWithResultsListFactory.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Storage\PersistantStorage.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LotteryDraw.BusinessLogic.Interfaces\LotteryDraw.BusinessLogic.Interfaces.csproj">
+      <Project>{DD13D07C-8492-4E9C-B4D5-E42F44DDFA46}</Project>
+      <Name>LotteryDraw.BusinessLogic.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LotteryDraw.Command.Interfaces\LotteryDraw.Command.Interfaces.csproj">
       <Project>{0051B252-28DE-4A24-89FA-B9489999A668}</Project>
       <Name>LotteryDraw.Command.Interfaces</Name>

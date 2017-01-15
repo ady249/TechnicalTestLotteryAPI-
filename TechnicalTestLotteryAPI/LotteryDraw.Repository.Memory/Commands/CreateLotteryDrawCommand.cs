@@ -20,9 +20,16 @@ namespace LotteryDraw.Repository.Memory.Commands
 
         public void Execute(object value)
         {
-            var data = value as ILotteryDraw;
+            var sourceData = value as ILotteryDraw;
             var datawithResults = _factory();
-            datawithResults?.GetType().GetProperties().Where(x => x.CanWrite).ToList().ForEach(x => x.SetValue(data, x.Name));
+
+            foreach (var data in datawithResults.GetType().GetProperties().Where(x => x.CanWrite))
+            {
+                var sourceField =
+                    sourceData?.GetType().GetProperties().FirstOrDefault(x => x.Name == data.Name)?.GetValue(sourceData);
+
+                data.SetValue(datawithResults, sourceField);
+            }
 
             Value = datawithResults;
         }

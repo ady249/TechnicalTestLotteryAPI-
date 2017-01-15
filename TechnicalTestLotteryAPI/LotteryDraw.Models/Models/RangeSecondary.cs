@@ -1,8 +1,8 @@
 ﻿using LotteryDraw.Models.Interfaces.Attributes.Invariant;
 
-namespace LotteryDraw.Models
+namespace LotteryDraw.Models.Models
 {
-    public class RangePrimary : IRangeInvariant
+    public class RangeSecondary : IRangeInvariant
     {
         public int Minimum { get; set; }
         public int Maximum { get; set; }

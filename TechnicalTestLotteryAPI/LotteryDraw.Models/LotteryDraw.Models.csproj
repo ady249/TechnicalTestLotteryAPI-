@@ -44,13 +44,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LotteryDraw.cs" />
+    <Compile Include="Models\LotteryDraw.cs" />
+    <Compile Include="Models\LotteryDrawWithResults.cs" />
+    <Compile Include="Models\Response\SimpleResponseWithData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RangeSecondary.cs" />
-    <Compile Include="RangePrimary.cs" />
-    <Compile Include="WinningNumbers.cs" />
+    <Compile Include="Models\RangeSecondary.cs" />
+    <Compile Include="Models\RangePrimary.cs" />
+    <Compile Include="Models\Response\SimpleResponse.cs" />
+    <Compile Include="Models\WinningNumbers.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LotteryDraw.ErrorHandler.Interfaces\LotteryDraw.ErrorHandler.Interfaces.csproj">
+      <Project>{25A1F2A6-92BD-4AB4-A922-60D24A88D756}</Project>
+      <Name>LotteryDraw.ErrorHandler.Interfaces</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LotteryDraw.Models.Interfaces\LotteryDraw.Models.Interfaces.csproj">
       <Project>{71B8771F-96F3-4CC0-A181-BF701EA1DFD4}</Project>
       <Name>LotteryDraw.Models.Interfaces</Name>
@@ -59,6 +66,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

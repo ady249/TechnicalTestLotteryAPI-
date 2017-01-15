@@ -2,5 +2,6 @@
 {
     public interface IDeleteLotteryDraw
     {
+        void Delete(string name);
     }
 }

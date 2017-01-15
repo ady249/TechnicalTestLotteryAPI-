@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attributes\ISequence.cs" />
     <Compile Include="Methods\IExecuteWithValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

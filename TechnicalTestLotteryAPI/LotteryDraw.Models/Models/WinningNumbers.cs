@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using LotteryDraw.Models.Interfaces.Models;
 
-namespace LotteryDraw.Models
+namespace LotteryDraw.Models.Models
 {
     public class WinningNumbers : IWinningNumbers
     {
